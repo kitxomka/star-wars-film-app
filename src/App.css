@@ -1,0 +1,32 @@
+h1{
+  margin-top: 1em;
+}
+.wrap-container{
+  width: 90rem;
+  margin: 3em auto;
+}
+
+.film-list, .film-details{
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 1.5em;
+  text-align: center;
+}
+.film{
+  padding-top: 0.8em;
+}
+.listItem{
+  cursor: pointer;
+}
+.fav{
+  width: 5rem;
+  margin: 0.5em auto;
+}
+.fav:hover{
+  color: #f06292;
+  cursor: pointer;
+}
+
+.is-fav{
+  color: #f06292;
+}
