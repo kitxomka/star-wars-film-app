@@ -1,29 +1,35 @@
-import {  Col, ListGroup } from "react-bootstrap";
+import { ListGroup, Card } from "react-bootstrap";
 
 
-const FilmsList = ({ films, handleClick }) => {
-  
+const FilmsList = ({ films, handleClick, activeItemId }) => {
 
-  const filmListHtml = 
-    films.map(film => (
-      <>
-      {/* <ListGroup.Item className="listItem" key={film?.uid} id={film?._id} onClick={handleClick}>{film?.properties?.title}</ListGroup.Item> */}
-      <h6 className="listItem" key={film?.uid} id={film?._id} onClick={handleClick}>{film?.properties?.title}</h6>
-      </>
-    ));
+  const filmListHtml = films.map( film => 
+    <ListGroup.Item key={ film?.uid } >
+      <div 
+        className={ `listItem ${activeItemId === film?._id ? 'active-item' : '' }` } 
+        id={ film?._id } 
+        onClick={ handleClick }
+      >
+        { film?.properties?.title }
+      </div>
+    </ListGroup.Item>
+  );
     
-    return (
-      <>
-            <Col className="film-details" sm={3}>
-              <h4>Film List</h4><hr/>
-              <ListGroup>
-                {filmListHtml}
-              </ListGroup>
-            </Col> 
-      </>
-    )
+  return (
+    <>
+      <Card>
+        <Card.Body>
+          <Card.Title>
+            <h4>Film List</h4>
+          </Card.Title>
+          <ListGroup style={{ marginTop: '1rem' }}>
+            { filmListHtml }
+          </ListGroup> 
+        </Card.Body>
+      </Card>   
+    </>
+  );
 }
-
 
 
 export default FilmsList;

@@ -1,32 +1,50 @@
-h1{
+h1 {
   margin-top: 1em;
-}
-.wrap-container{
-  width: 90rem;
-  margin: 3em auto;
+  margin-bottom: 1em;
 }
 
-.film-list, .film-details{
-  border: 1px solid black;
-  border-radius: 4px;
-  padding: 1.5em;
+h4 {
   text-align: center;
+  font-weight: bold;
 }
-.film{
-  padding-top: 0.8em;
+
+.listItem {
+  cursor: pointer;  
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
 }
-.listItem{
-  cursor: pointer;
+
+.title {
+  font-weight: bold;
+  font-size: 1rem;
 }
-.fav{
-  width: 5rem;
+
+.listItem:hover, 
+.active-item {
+  color: blue;
+}
+
+.fav {
   margin: 0.5em auto;
+  text-align: end;
 }
-.fav:hover{
+
+.fav:hover {
   color: #f06292;
   cursor: pointer;
 }
 
-.is-fav{
+.is-fav {
   color: #f06292;
 }
+
+.ditailsAbstract {
+  text-align: justify;
+  margin: 0.5em;
+}
+
+.ditailsAbstract span {
+  font-weight: bold;
+}
+
