@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/star-wars-film-app/static/css/main.ef39472a.chunk.css",
-    "main.js": "/star-wars-film-app/static/js/main.5ec0bc1d.chunk.js",
-    "main.js.map": "/star-wars-film-app/static/js/main.5ec0bc1d.chunk.js.map",
+    "main.css": "/star-wars-film-app/static/css/main.c4045008.chunk.css",
+    "main.js": "/star-wars-film-app/static/js/main.a2c920ec.chunk.js",
+    "main.js.map": "/star-wars-film-app/static/js/main.a2c920ec.chunk.js.map",
     "runtime-main.js": "/star-wars-film-app/static/js/runtime-main.5aec4230.js",
     "runtime-main.js.map": "/star-wars-film-app/static/js/runtime-main.5aec4230.js.map",
-    "static/js/2.f7895028.chunk.js": "/star-wars-film-app/static/js/2.f7895028.chunk.js",
-    "static/js/2.f7895028.chunk.js.map": "/star-wars-film-app/static/js/2.f7895028.chunk.js.map",
+    "static/js/2.1743dd43.chunk.js": "/star-wars-film-app/static/js/2.1743dd43.chunk.js",
+    "static/js/2.1743dd43.chunk.js.map": "/star-wars-film-app/static/js/2.1743dd43.chunk.js.map",
     "index.html": "/star-wars-film-app/index.html",
-    "static/css/main.ef39472a.chunk.css.map": "/star-wars-film-app/static/css/main.ef39472a.chunk.css.map",
-    "static/js/2.f7895028.chunk.js.LICENSE.txt": "/star-wars-film-app/static/js/2.f7895028.chunk.js.LICENSE.txt"
+    "static/css/main.c4045008.chunk.css.map": "/star-wars-film-app/static/css/main.c4045008.chunk.css.map",
+    "static/js/2.1743dd43.chunk.js.LICENSE.txt": "/star-wars-film-app/static/js/2.1743dd43.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5aec4230.js",
-    "static/js/2.f7895028.chunk.js",
-    "static/css/main.ef39472a.chunk.css",
-    "static/js/main.5ec0bc1d.chunk.js"
+    "static/js/2.1743dd43.chunk.js",
+    "static/css/main.c4045008.chunk.css",
+    "static/js/main.a2c920ec.chunk.js"
   ]
 }
