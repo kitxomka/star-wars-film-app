@@ -3,7 +3,8 @@ import axios from "axios";
 
 
 export const useFilmFetch = () => {
-    const [films, setFilms] = useState([]);
+    const [ films, setFilms ] = useState([]);
+    const [ loading, setLoading ] = useState( false );
 
     const url = 'https://www.swapi.tech/api/films';
   
@@ -11,15 +12,21 @@ export const useFilmFetch = () => {
       fetchFilms();
     }, []);
 
-    const fetchFilms = () => {
-       axios.get(`${url}`)
-       .then(res => {
-          const allFilms = res.data.result;
-          setFilms(allFilms);
-       })
-       .catch(error => console.error(`Error: ${error}`));
+    const fetchFilms = async () => {
+      try {
+         const data = await axios 
+         .get( `${url}` )
+         .then( res => {
+            console.log(res);
+            const allFilms = res.data.result;
+            setFilms( allFilms );
+         });
+         setLoading(true);
+      } catch (e) {
+         console.log(e);
+      }
    }
-     return { films, fetchFilms };
+     return { films, loading, fetchFilms };
   };
 
   export default useFilmFetch;
